@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 테이블
+     HTML 테이블은 <table>,<tr><td>,<th>,<thead>,<tbody>,<tfoot>등이 있다.
+     <tr>은 데이터의 행 <td>는 열 
+     thead는 헤더, tbody는 본문, tfoot은 푸터-->
+
+     <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <Td>2행 2열</Td>
+        </tr>
+        <tr>
+            <Td>3행 1열</Td>
+        </tr>
+    
+     </table>
+     <hr>
+    <h3>2행 1열 테이블</h3>
+    <table border ="1">
+        <tr>
+            <td>1행 1열</td>
+           
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+           
+        </tr>
+    </table>
+    <hr>
+    <h3>2행 2열 테이블</h3>
+    <table border ="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>테이블 열 합치기</h3>
+    <table border ="1">
+        <tr>
+            <td colspan="3">메뉴판</td>
+        </tr>
+        <tr>
+            <Td>짜장</Td>
+            <td>짬뽕</td>
+            <td>탕수육</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>테이블 행 합치기</h3>
+    <table border="1">
+        <tr>
+            <td rowspan="2">메뉴판</td>
+            <td>짜장</td>
+        </tr>
+        <tr>
+            <td>짬뽕</td>
+        </tr>
+    </table>
+    <hr>
+    <h3> 그룹 짓기 </h3>
+    <!-- <thead>는 HTML 테이블에서 헤더 콘텐츠를 하나의 그룹으로 묶을때 사용
+        <tbody><tfoot>은 하단 그룹 명시
+            레이아웃에는 영향 X 이 요소의 스타일을 CSS로 변경 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <Th>출장비 내역</Th>
+                <th>금액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>교통비</td>
+                <td>45000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <Tr>
+                <td>합계</td>
+                <td>110000</td>
+            </Tr>
+        </tfoot>
+    </table>
+</body>
+</html>
