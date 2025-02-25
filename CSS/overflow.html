@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:150px;
+            height:70px;
+            padding:5px;
+            border:1px solid black;
+        }
+        /*지정된 영역 안에서만 내용 표시*/
+        .a1{overflow:hidden;}
+        /*초과된 영역 스크롤*/
+        .a2{overflow:scroll;}
+        /*내용이 넘치면 스크롤*/
+        .a3{overflow:auto;}
+        /*기본값*/
+        .a4{overflow:visible;} 
+
+    </style>
+</head>
+<body>
+    <p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit</p>
+    <p class="a2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit</p>
+    <p class="a3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit</p>
+    <p class="a4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit</p>
+</body>
+</html>
