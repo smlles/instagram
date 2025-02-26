@@ -7,7 +7,7 @@
     <style>
         body{
             height:100vh;
-            width:400px;
+            width:300px;
             background-color: gray;
             align-content: center;
             margin:auto;
@@ -16,22 +16,29 @@
         #login{
             background-color: white;
             text-align: center;
-            
-            
-            
         }
         #login > #name{
             text-align: left;
             margin-left:10px;
-            
+        }
+        .id{
+            width: 270px;
         }
         #login > #pw{
             text-align: left;
             margin-left:10px;
-        }
-        button{
-            border-radius:8%;
             
+        }
+        .pw{
+            width:270px;
+            text-align: center;
+        }
+        .button{
+            border-radius:8%;
+            background-color: blue;
+            color:white;
+            width:280px;
+            height:30px;
         }
     </style>
 </head>
@@ -40,13 +47,15 @@
         <h3>로그인</h3>
         <div id="name">
             <strong>아이디</strong>
-            <p><input type="text"></p>
+            <p><input type="text" class="id"></p>
         </div>
         <div id="pw">
             <strong>비밀번호</strong>
-            <p><input type="password"</p>
+            <p><input type="password" class="pw"></p>
         </div>
-        <input type="button" value="로그인"><br>
+        <div >
+            <input type="button" value="로그인" class="button"><br>
+        </div>
         아직 회원이 아니신가요? <a href="#">회원가입</a>
     </div>
 </body>
