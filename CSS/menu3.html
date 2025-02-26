@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;}
+        [disabled]{
+            opacity:0.5;
+        }
+        ul{
+            display:flex;
+            color:blue;
+            font-weight: bold;
+            font-size:20px;
+        }
+        li{
+            list-style:none;
+            border:2px solid gray;
+            padding:5px 10px;
+            position:absolute;
+        }
+       
+        .sub{
+            display: ;
+            position:absolute;
+            width: auto;
+            height: auto;
+        }
+        main:hover{
+            
+        }
+        main > li:hover{
+            background-color: gray;
+            color:white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul class="main">
+            <li>HTML</li>
+                <ul class="sub" disabled>
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                </ul>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>JSP</li>
+        </ul>
+        <ul class="sub" disabled>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+</div>
+</body>
+</html>

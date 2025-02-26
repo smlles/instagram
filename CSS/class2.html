@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style:none;
+        }
+        li:first-child{/*맨앞*/
+            color:red;
+        }
+        li:last-child{/*맨뒤*/
+            color:blue;
+        }
+        li:nth-child(odd){/*홀수*/
+            color:red;
+        }
+        li:nth-child(even){/*짝수*/
+            color:blue;
+        }
+        li:nth-child(4n){/*n의 배수*/
+            color: #ff64ff;;
+        }
+        li:nth-child(7){/*특정 값*/
+            color: gray;
+        }
+        a{
+            color:gray;
+            text-decoration:none;
+        }
+        a:hover{
+            color:orange;
+            text-decoration:line-through;
+        }
+        a:active{
+            color:red;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 가상클래스
+     HTML 요소의 특정 상태나 조건에 따라 
+     스타일을 적용 할 수 있게 해주는 CSS선택자 -->
+     <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+     </ul>
+     <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+     </ul>
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+     </ul>
+     <ul>
+        <!-- 밑줄 없애고 글씨 회색
+         호버 글씨 오렌지 취소선 -->
+        <li><a href="#">홈</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">오시는길</a></li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        /* px : 값고정
+        em : 값변화 (반응형) */
+        .container{
+            display:flex;
+            /* flex는 부모display한테 준다. */
+            margin:1em 0;
+            border : 3px dotted black;
+            padding:0.5em;
+
+        }
+        .box{
+            background-color: #f112;
+            color:white;
+            padding:1em;
+            font-size:2em;
+            border:3px solid black;;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">ITEM1</div>
+        <div class="box">ITEM1</div>
+        <div class="box">ITEM1</div>
+    </div>
+</body>
+</html>
