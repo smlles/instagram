@@ -8,19 +8,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--넓이 = 기기의 넓이, 기본 크기 = 100% 라는 의미-->
         <title>오늘 뭐 먹지</title> <!--제목, 브라우저 상단 웹페이지 탭 제목-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- relationship : 연결하려는 파일과의 관계 -->
     </head>
     <body> 
         <!--HTML 문서에서 실질적으로 보이는 영역을 정의하는 곳 (우리가 보는 모든 것)
         코드 작성시 엔터를 눌러 줄바꿈을 시도해도 화면에선 한 줄로 나옴 -->
-        <img src="image/instagramlogo.png" width="150">
-        <input value="검색">
-        <div>
-            <img src="image/profile.jpg" width="50">
-            <div>
-                <h2>half_bottle</h2>
-                <button>프로필 편집</button>
-            </div>
+        <div id="top">
+            <img src="image/instagramlogo.png" width="150">
+            <input value="검색">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-heart"></i>
         </div>
+        <div id="profile">
+            <div id="profile_pic">
+                <img src="image/profile.jpg" class="circle_picture">
+            </div>
+            <div id="profile_info">
+                <div id="id">half_bottle
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                
+                <button>프로필 편집</button>
+                
+            </div>
+        </div> 
         <div> <!--프로필-->
             <div> 
                 <strong>
@@ -34,53 +49,77 @@
                 </p>
             </div>
         </div>
-        <div> <!--하이라이트-->
-            <div>
-                <div>
-                    <img src = "image/hi1.jpg" width="35px">
+        <div id="highlight_area"> <!--하이라이트-->
+            <div class="highlight">
+                <div id="highlight_pic">
+                    <img src = "image/hi1.jpg" class="circle_picture">
                 </div>
                 <div>
                     🤣    
                 </div>
             </div>
-            <div>    
-                <div>
-                    <img src = "image/hi2.jpg" width="35px">
+            <div class="highlight">    
+                <div id="highlight_pic">
+                    <img src = "image/hi2.jpg" class="circle_picture">
                 </div>
                 <div>
                     👍
                 </div>
             </div>
-        </div>
-        <div> <!--정보-->
             <div>
+                
+            </div>
+        </div>
+        <div id="stat_bar"> <!--정보-->
+            <div class="stat">
                 게시물<br>
                 133
             </div>
-            <div>
+            <div class="stat">
                 팔로워<br>
                 408
             </div>
-            <div>
+            <div class="stat">
                 팔로우<br>
                 189
             </div>
         </div>
-        <div>아이콘</div>
-        <div>
+        <!-- 아이콘자리 -->
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="selected">
+                <i class="fa-solid fa-tag"></i>
+            </div>
+            <div class="selected">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="selected">
+                <i class="fa-solid fa-folder-open"></i>
+            </div>
+            <div class="selected">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+        </div>
+        <div class="thumbnail_grid">
             <!-- 부모 너비의 32%만큼 저장
              %값은 화면 크기에 따라 유동적으로 바뀜 
              창 크기에 맞춰 정보나 크기가 바뀌는 웹페이지를
              반응형 웹이라고 함-->
-            <img src="image/1.jpg" width="32%">
-            <img src="image/2.jpg" width="32%">
-            <img src="image/3.jpg" width="32%">
-            <img src="image/4.jpg" width="32%">
-            <img src="image/5.jpg" width="32%">
-            <img src="image/6.jpg" width="32%">
-            <img src="image/7.jpg" width="32%">
-            <img src="image/8.jpg" width="32%">
-            <img src="image/9.jpg" width="32%">
+            <img src="image/1.jpg" class="thumbnail">
+            <img src="image/2.jpg" class="thumbnail">
+            <img src="image/3.jpg" class="thumbnail">
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/4.jpg" class="thumbnail">
+            <img src="image/5.jpg" class="thumbnail">
+            <img src="image/6.jpg" class="thumbnail">
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/7.jpg" class="thumbnail">
+            <img src="image/8.jpg" class="thumbnail">
+            <img src="image/9.jpg" class="thumbnail">
         </div>
     </body>
 </html>
