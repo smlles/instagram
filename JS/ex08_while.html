@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //while문 
+        //for문은 정해진 횟수만큼
+        //while문은 반복 횟수가 정해져있지 않고, 조건이 true일 경우 계속 반복
+        //for문과 다르게 시작,증감이 없어서 잘못하면 무한 루프에 들어감
+
+        let num = 1; //시작
+        while(num<4){ //조건
+            document.write(num); //실행
+            num++; // 증감
+        }
+        document.write(`<hr>`);
+        //1에서 10까지 총합
+        let num1=1;
+        let sum = 0;
+        while(num1<=10){
+            sum += num1;
+            num1++;
+        }
+        document.write(sum);
+
+        //do-while
+        //실행을 일단 한번 하고 while 조건문 반복
+
+        //do{
+        //반복 할 일
+        //while(조건식);
+        //}
+
+        let y = 11;
+        do{
+            console.log(y);
+            y++
+        }while(y<10);
+        document.write(`<hr>`);
+
+        //상황에 따라 반복문 사용하기
+        //반복 횟수가 지정되는 경우 -> 횟수를 만족 할 때까지 
+        //ex) 넘치건 말건 물통에 물을 10번 따르기 -> for문
+
+        //어떠한 조건이 만족할 때 까지 반복하는 경우 
+        //ex) 물통에 물이 가득 찰 때 까지 부어라 -> while문
+
+        //일단 한번 해보고 생각하는 경우
+        //ex) 일단 물을 부어보고, 물이 새지 않으면 채워라 -> do-while문
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
