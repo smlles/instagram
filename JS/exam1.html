@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+       
+        //숫자들의 평균 구하기
+        // 80 , 95, 75
+        // 총합, 평균
+
+        let n1 = 80 ,n2 =95 , n3=75
+
+        let sum1 = n1+n2+n3;
+        let average1 = sum1/3;
+
+        document.write("총합 :",sum1,"<br>")
+        document.write("평균 :",average1,"<br>")
+        document.write("<hr>")
+
+
+        //하루의 총 시간을 초로 계산하기
+
+        let hour = 24
+        let minute = 60
+        let second = 60
+        let oneDaySecond = hour*minute*second
+
+        document.write("하루는 ",oneDaySecond,"초 이다.<br>")
+        document.write("<hr>")
+
+        //농구공 23개, 박스당 4개, 박스 개수는? 계산식은 23/4=n+1
+        let ball = 34 ,box_in_ball =6;
+        let need_box= ball / box_in_ball
+        
+        need_box = ball%box_in_ball==0 ? ball / box_in_ball : Math.ceil(ball/box_in_ball)
+        
+        document.write("박스의 개수 : ",(need_box))
+        document.write("<hr>")
+
+                //사각형의 면적과 둘레 계산하기
+        //가로 10 세로 5
+        //면적 둘레
+
+        let width = 10;
+        let height = 5;
+        let circ = 2 * (width) + 2 * (height);
+        let area = width*height;
+        
+        document.write("면적 :"+area+"<br>");
+        document.write("둘레 :"+circ+"<br>");
+        document.write("<hr>");
+        
+        //섭씨 화씨 변경 / 화씨 = 섭씨 * 1.8 = 32;
+        let C = 25;
+        let F = C*1.8 +32;
+
+        document.write("섭씨 "+C+"도는 화씨로 "+F+"도이다.<br>");
+        document.write("<hr>");
+
+        let a,b;
+        a=b=3+4*5;
+        document.write("a:"+a+"<br>");
+        document.write("b:"+b+"<br>");
+        document.write("<hr>");
+
+        let x;
+        x=10/2*3;
+        document.write("x:"+x+"<br>");
+        document.write("<hr>");
+
+        let result
+        result = 5+3>7 && 2<4;
+        document.write("result:"+result+"<br>");
+        document.write("<hr>");
+
+        let c,d,e,total
+        total = (c=2)+(d=3)*(e=4)
+        document.write("total:"+total+"<br>");
+        document.write("c:"+c+"<br>");
+        document.write("d:"+d+"<br>");
+        document.write("e:"+e+"<br>");
+        //1.total
+        //2. a:,b:,c: 14 2 3 4 
+        document.write("<hr>");
+
+        let y,z
+        z = (y=5) > 3 ? y * 2 : y/2;
+        //y: 5
+        //z:10
+        document.write("y:"+y+"<br>");
+        document.write("z:"+z+"<br>");
+        document.write("<hr>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //su1, su2 변수의 임의값 초기화
+        // 산술 연산자 '+','-','*','/','%'를 담을 변수 만들기
+        // switch문을 담아 정수의 연산을 수행하는 코드 만들기
+        //ex) 10*7=70
+
+        let su1 = 7;
+        let su2 = 10;
+        let x = '+';
+        switch(x){
+            case '+' : 
+                console.log(`${su1}+${su2} = ${su1+su2}`);
+                break; 
+            case '-' : 
+            console.log(su1-su2);
+                break; 
+            case '*' : 
+            console.log(su1*su2);
+                break; 
+            case '/' : 
+            console.log(su1/su2);
+                break; 
+            case '%' : 
+            console.log(su1%su2);
+                break; 
+        }
+
+        //1~10 사이의 값을 변수에 담고
+        //홀수인지 짝수인지 switch를 이용해 판별
+        let num1 = 8;
+        let sum1 = num1%2
+        if(num1<10 && num1 >0)
+            switch(sum1){
+                case 1 :
+                    console.log(`${num1}은 홀수이다.`)
+                    break;
+                case 0 :
+                    console.log(`${num1}은 짝수이다.`) 
+                    break;
+            }else {
+                console.log(`잘못된 숫자입니다.`)
+        }
+        switch(num1%2){
+            case 1 :
+                    console.log(`${num1}은 홀수이다.`)
+                    break;
+                case 0 :
+                    console.log(`${num1}은 짝수이다.`) 
+                    break;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

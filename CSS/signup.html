@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            margin: 0;
+            padding:0;
+            height:100vh; 
+        }
+        .signup_container{
+            display:flex;
+            border-radius: 15px;
+            background-color: white;
+            padding:40px;
+            width:60%;
+            flex-direction:column;
+        }
+        /* 제목 스타일 */
+        .signup_container h2{
+            text-align: center; 
+        }
+        /*  폼 내부 요소 세로 배치 */
+        .signup_container form{
+            display:flex;
+            flex-direction:column;
+            font-weight:bold;
+        }
+        /* 레이블 스타일 */
+        .signup_container label{
+            margin-bottom: 5px;
+        }
+        /* 공통 입력 스타일 */
+        .signup_container input[type=text],
+        .signup_container input[type=password],
+        .signup_container input[type=email]{
+            margin-bottom: 15px;
+            font-size:15px;
+            padding:10px; 
+            border-radius:8px;
+            border:2px solid gray;  
+            box-sizing:border-box; 
+                /*box-sizing 
+                CSS에서 요소 크기를 계산하는 방식을 변경
+                content-box(기본)
+                -요소의 너비와 높이는 오직 내용 영역만
+                - padding,margin,border는 요소의 총 크기에 추가.
+                border-box 
+                - 요소의 너비와 높이는 padding과 border가 포함
+                - 지정된 너비 내에서 padding과 border가 계산되므로
+                내용은 알아서 줄어듬  */
+        }
+        /* 클릭했을때 */
+        .signup_container input:focus{
+            outline:none;
+            border-color:violet
+        }
+        
+        .signup_container > form > .id_container{
+            display: flex;
+            /*flex-direction:row;*/
+            align-items: flex-start;
+            gap:10px; /*요소간의 간격을 줌*/
+        }
+        .signup_container > form > .id_container > input{
+            flex:1;
+           /* width:70%;   */
+        }
+        /*.signup_container .id_container button{
+            
+            width: 30%;    
+        }*/
+        .signup_container > form > .id_container > button{
+            height:40px;
+            background-color: blue;
+            color:white;
+            border-radius: 10px;
+           /* width:70%;   */
+        }
+        .signup_container > form > .id_container > button:hover{
+            background-color: aquamarine;
+            cursor:pointer;
+           /* width:70%;   */
+        }
+        .signup_container > form > .email_container{
+            display: flex;
+            flex-direction:row;
+            align-content: center;
+            gap:10px;
+        }
+        .signup_container > form > .email_container > input,
+        .signup_container > form > .email_container >select{
+            height:35px;
+            padding:5px;
+            border:1px solid gray;
+            font-size:15px;
+            
+        }
+        .signup_container > form > .email_container > input{
+            flex:1;
+            
+        }
+        
+        /*.signup_container > form > .email_container > select{
+           width:25%;
+            
+        }*/
+        .signup_container button.signup_button{
+            height:40px;
+            background-color: blue;
+            color:white;
+            border-radius: 10px;
+        }
+        .signup_container button.signup_button:hover{
+            background-color: blueviolet;
+            cursor:pointer;
+        }
+        /*select{
+            height:40px;
+        }*/
+        .sign_in_link{
+            text-align: center;
+        }
+        .sign_in_link a{
+            text-decoration: none;
+        }
+        span{
+            top:7px;
+            position:relative;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup_container">
+        <h2>회원가입</h2>
+        <form action="#" method="post">
+            <label for="userName">이름</label>
+                <input type="text" placeholder="이름 입력" class="name">
+            
+                <label for="userId">아이디</label>
+            <div class="id_container">
+                <input type="text" placeholder="아이디 입력" class="id">
+                <button>중복체크</button>
+            </div>
+            <label for="userPw">비밀번호</label>
+                <input type="password" placeholder="비밀번호 입력" class="pw">
+            <label for="userCheck_Pw">비밀번호 확인</label>
+                <input type="password" placeholder="비밀번호 확인" class="check_pw">    
+            
+                <label for="userEmail">이메일</label>
+            <div class="email_container">
+                <input type="email" placeholder="이메일 입력" class="name">
+                <span>@</span>
+                <select>
+                    <option>naver.com</option>
+                    <option>daum.net</option>
+                    <option>gmail.com</option>
+                    <option>직접 입력</option>
+                </select>
+            </div>
+            <button class="signup_button">회원가입</button>
+        </form>
+        <div class="sign_in_link">
+            이미 계정이 있으신가요? <a href="menu4.html">로그인</a>
+        </div>
+        </div> 
+</body>
+</html>

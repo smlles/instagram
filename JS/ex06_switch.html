@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //switch문
+        //if문과 비슷하지만 if문은 조건식 
+        //switch문은 비교값 
+        /*switch(비교값){
+            case 조건값 1 :
+                비교값과 조건값1이 같을 때 실행할 명령
+                break;
+            case 조건값 2 :
+                비교값과 조건값1이 같을 때 실행할 명령
+                break;
+            case 조건값 3 :
+                비교값과 조건값1이 같을 때 실행할 명령
+                break;
+            case 조건값 4 :
+                비교값과 조건값1이 같을 때 실행할 명령
+                break;
+
+        }
+        */
+       n=1;
+       switch(n){
+            case 1:
+                console.log('1.게임하기');
+                break;
+            case 2:
+                console.log('2.환경설정');
+                break;
+            case 3:
+                console.log('3.게임종료');
+                break;
+       }
+       switch(n){
+            case 1:
+                console.log(`n은 1이다.`);
+               
+            case 2:
+                console.log(`n은 2이다.`);
+                
+            case 3:
+                console.log(`n은 3이다.`);       
+       }
+       //모두가 하나의 명령을 공유
+       switch(n){
+        case 1: case 2: case 3:
+            console.log(`n은 1이다.`)
+       }
+       //break;가 없으면 모든 명령을 실행하면서 내려간다.
+       //끝까지 없으면 다하고 나감
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

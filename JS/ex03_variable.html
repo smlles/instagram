@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     //변수 만드는 법 (변수 선언)
+     //1. 키워드 변수명;  -> 빈 그릇
+     //2. 키워드 변수명 = 데이터; -> 그릇도 있고 내용물도 있음
+
+     //변수 대입
+     // 변수명 = 새로운 데이터;
+
+     //키워드
+     //var : 같은 이름의 변수가 만들어졌을 때 감지 불가 (에러가 나지 않음);
+     //let : 같은 이름의 변수가 만들어졌을 때 감지 (에러 나옴);
+     //ㄴ : 새로운 값은 대입 할 수 있음.
+     //const : 같은 이름의 변수가 만들어졌을 때 에러. 대입불가
+
+     //변수명 짓는 규칙
+     //1.첫글자는 영문 (a~z A~Z), 밑줄(_), $ 로 시작. (숫자X)
+     //2.대소문자 구분
+     //3.공백,특문 불가
+     //4.예약어 금지
+     //5.한글 금지
+
+     //권장 (길어도 상관 없음)
+     //의미있는 이름 ex)나이 =age , 주소=address
+     
+     //변수명 표기
+     //Camel Case(낙타표기) 소문자로 시작, 이후 단어 대문자 userName <<< 이거
+     
+     //snake Case(스네이크표기)
+     //단어 사이를 밑줄연결 user_name << 이거
+
+     //pascal Case(파스칼 표기)
+     //모든 단어의 첫 글자를 대문자로 작성 UserName << 이거
+
+     //헝가리 표기
+     //변수명 지을 때 데이터 타입이나 의미를 나타내는 접두사.
+     //nCount, sDate
+     
+     //변수를 사용하여 데이터를 관리하면, 재사용 할 때 좋음
+     let n1 = 10;
+     document.write(n1+'<br>');
+     
+     let s1= "홍길동";
+     document.write(s1+'<br>');
+
+     let n2 = 15;
+     document.write("n2:"+n2+n2+"<br>")
+        // 데이터 타입이 다를 때 +는 연결
+        // 데이터 타입이 같을 때 +는 연산
+     document.write(n1+n2+"<br>");
+     document.write("15+10"+1+"<br>");
+        // 연산은 왼쪽에서 오른쪽으로 함
+        // 일반 수학과 똑같이, () << 이거 박으면 계산 먼저해줌
+     document.write("n1+n2 = "+n1+n2+"<br>"); 
+     document.write("n1+n2 = "+(n1+n2)+"<br>"); 
+
+     let n3; // 빈 그릇
+        // 변수에 값 안넣으면 undifined가 기본값
+     document.write(n3+"<br>");
+
+     n3 = 3.14;
+     document.write(n3+"<br>");
+
+     let sum = n1+ n2; 
+     // 연산값을 대입 할 수도 있다. 이 경우 sum을 변수 취급
+     // 이름 홍길동 / 나이 45 / 주소 / 인천시 부평구/ 키 184.5
+     //숫자형 = 그냥 갈김 / 문자형 '', "" << 필요
+     // 웬만하면 대입 훗사용 , 출력도 변수 명으로 하는게 편함
+
+     let name1="홍길동";
+     let age1 = 45;
+     let address1 = "인천시 부평구";
+     let height1 = 184.5;
+     document.write("이름 : "+name1+"<br>");
+     document.write("나이 : "+age1+"<br>");
+     document.write("주소 : "+address1+"<br>");
+     document.write("키 : "+height1+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

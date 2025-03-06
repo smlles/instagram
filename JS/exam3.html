@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 배열 총합 구하기
+        //for of문
+        let numbers = [10,20,30,40,50]
+        let sum = 0;
+        for(let num of numbers){
+            sum+=num;
+        }
+        document.write(sum)
+        document.write(`<hr>`)
+        //일반 for문
+        let sum1=0;
+        for(let i=0;i<numbers.length;i++){
+            sum1 += numbers[i]
+        }
+        document.write(sum1)
+        document.write(`<hr>`)
+        //2. 배열 뒤집기
+        let arr = new Array(numbers.length);
+        for(let i = 0;i<numbers.length;i++){
+            arr[i]=numbers[numbers.length-i-1]
+        }
+        document.write(arr)
+        document.write(`<br>`)
+        document.write(numbers)
+        console.log(arr)
+        document.write(`<hr>`)
+        //3. numbers에서 짝수만 출력하기
+        for(let i=0;i<numbers.length;i++){
+            if(numbers[i]%2==0){
+                document.write(`${numbers[i]} `)
+            }
+        }
+        document.write(`<hr>`)
+        // 1~45 난수 발생시켜 로또 생성하는 플로어 만들기
+        //Math.floor(Math.random()*45)+1;
+        let x = 0;
+        let lotto = new Array(6)
+    
+            outer:for(let i = 0; i<lotto.length;){
+                //로또 번호 만들기
+                lotto[i]=Math.floor(Math.random()*45)+1
+                //중복여부
+                for(let j =0; j<i; j++){
+                    if(lotto[i]===lotto[j]){
+                        continue outer;
+                    }
+                }
+                //중복이 아니어야 이동
+                document.write(`${lotto[i]} `)
+                i++
+            }
+                
+                
+            
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
