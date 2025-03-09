@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <script>
-        // input에 단을 입 력하고 계산시작 누르면 아래에 구구단 나오게
-        // 만약 input에 값이 입력 되지 않았다면 "값을 입력해주세요"
-        // 만약 input에 1이하 or 10이상이 입력되었다면 "2~9사이의 값을 입력해주세요."
-        let func1 = (n) =>{
-            /*let input = document.querySelector("#Ndan");as
-            let value = input.value;
-            m_div.innerHTML=value;*/
-            for(let i =1; i=9;i++){
-                
-                m_div.innerHTML=(`${n} X ${i} = ${n*i}`)
-            }
+    <title>구구단 출력기</title>
+    <style>
         
-            
-        }
-
-    </script>
+    </style>
 </head>
 <body>
+   
+    
+    <!-- 숫자 입력 받는 부분 -->
     단 : 
-    <input type="text" value="" id="Ndan">
-    <button id="gugudan" onclick="func1()">계산시작</button>
+    <input type="text" id="number"   />
+    <button id="generateBtn">계산하기</button>
     <button>숨기기</button>
     <hr>
-    <div id="m_div">
+    
+    <!-- 구구단 결과 출력 -->
+    <div id="result"></div>
 
-    </div>
+    <script>
+        // 버튼 클릭 시 동작
+        document.querySelector('#generateBtn').addEventListener('click', function() {
+            // 입력받은 숫자 가져오기
+            let number = document.querySelector('#number').value;
+            let resultDiv = document.querySelector('#result');
+            
+            // 오류
+            if (number ===""){
+                alert("값을 입력해주세요.");
+                return;
+            }
+            else if( number <= 1 || number > 9) {
+                alert("2~9의 값을 입력해주세요");
+            }else if(number>=2&&number<10){  
+                //실행
+            let gugudan = '<ul style="list-style-type:none">'
+                for (let i = 1; i <= 9; i++) {
+                    gugudan += `<li>${number} x ${i} = ${number * i}</li>`;
+            }
+            gugudan += `</ul>`;
+        
+            // 구구단 결과를 결과 div에 출력
+            resultDiv.innerHTML = gugudan;
+        
+        }});
+    </script>
 </body>
 </html>
