@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // input에 단을 입 력하고 계산시작 누르면 아래에 구구단 나오게
+        // 만약 input에 값이 입력 되지 않았다면 "값을 입력해주세요"
+        // 만약 input에 1이하 or 10이상이 입력되었다면 "2~9사이의 값을 입력해주세요."
+        let func1 = (n) =>{
+            /*let input = document.querySelector("#Ndan");as
+            let value = input.value;
+            m_div.innerHTML=value;*/
+            for(let i =1; i=9;i++){
+                
+                m_div.innerHTML=(`${n} X ${i} = ${n*i}`)
+            }
+        
+            
+        }
+
+    </script>
+</head>
+<body>
+    단 : 
+    <input type="text" value="" id="Ndan">
+    <button id="gugudan" onclick="func1()">계산시작</button>
+    <button>숨기기</button>
+    <hr>
+    <div id="m_div">
+
+    </div>
+</body>
+</html>
