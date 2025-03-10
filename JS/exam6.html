@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num =1;
+       let path = "../CSS/image/img";
+        function prev(){
+            num--;
+            if(num<1){
+                num=7;
+            }
+           
+            let prev_img = document.querySelector("#gallery");
+            prev_img.src=`${path+num}.jpg`
+        }
+        function next(){
+            num++;
+            if(num>7){
+                num=1;
+            }
+           
+            let next_img = document.querySelector("#gallery");
+            next_img.src=`${path+num}.jpg`
+        }
+        
+        // 오른쪽 가기 (숫자 늘이기)
+        // 사진 바꾸기 
+        setInterval("next()",4000); // 각 호출사이에 고정된 시간으로, 함수를 반복 호출한다.
+        //1000ms = 1초
+        //css와 동일하게, 제어할 태그 선택 / document.qureySelector / 그리고 태그 제어
+    </script>
+</head>
+<body>
+    <!--오른쪽 :right_btn, 왼쪽 :left_btn ,이미지 : img1~7.jpg
+    왼쪽 클릭시 1감소, 오른쪽클릭시 1증가 
+    1보다 감소되면 7으로, 7보다 커지면 1로-->
+    <div id="galleryWrap">
+        <a href= "#" onclick="prev()">
+            <img alt="이전" src="../CSS/image/left_btn.png"  >
+        </a>
+            <img alt="갤러리" id="gallery" src="../CSS/image/img1.jpg" height="200px" width="300px" >
+        <a href="#" onclick="next()">
+            <img alt="다음" src="../CSS/image/right_btn.png" id="next"
+    </div>
+</body>
+</html>

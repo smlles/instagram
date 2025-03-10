@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gugudan(){
+            //1. input 태그의 value 읽기
+            let dan = document.querySelector('#dan').value; //값을 가져와야 하면 value까지
+            //2. 유효성
+            if(dan.trim()===''){
+                alert('값을 입력해주세요')
+                return;//함수에서 나감
+            }
+            if(dan<2||dan>9){
+                alert('2~9사이의 값을 입력해주세요.')
+                return;
+            }
+
+            
+            //3. 계산
+            str = '';
+            for(let i =1;i<10;i++){
+                str += dan + 'X' + i + '=' + (dan*i)+"<br>"; 
+            }
+            //4. div에 넣기 -> div 태그 선택하기
+            let g_div = document.querySelector('#disp');
+            g_div.innerHTML= str;
+        }
+        // 두가지 선택지가 있으면 논리형으로 해결하는게 편함
+        let b_show=true;
+        function show(){
+
+            b_show =!b_show;
+            //input 버튼에 쓰여진 value 값 변경
+            document.querySelector('#bt_show').value= b_show ? '숨기기' : '보이기';
+            //div의 display 변경
+            document.querySelector('#disp').style.display = b_show ? 'block' : 'none'; 
+        }
+        function add(){ 
+            //x,y값 지정
+            let x = document.querySelector('#num1').value;
+            let y = document.querySelector('#num2').value;
+            // 비어있어 오류출력
+              
+            //더하기 가끔 이상해지니까 parseInt 붙혀야함
+            //문자열을 숫자로 바꾸는 타이밍은, 조건문(유효성 확인)이 끝나고 나서
+            x = parseInt(x);
+            y= parseInt(y);
+            //더하고 
+            let int1 = x+y ;
+            //출력
+            let a_div=document.querySelector('#result');
+            a_div.innerHTML=int1;
+        }
+        function minus(){ 
+            //x,y값 지정
+            let x = document.querySelector('#num1').value;
+            let y = document.querySelector('#num2').value;
+            // 비어있어 오류출력
+            if(x.trim() ==="" || y.trim()===""){
+                alert("값을 입력해주세요")
+                return;
+            }
+            let int1 = x-y ;
+            //출력
+            let a_div=document.querySelector('#result');
+            a_div.innerHTML=int1;
+        }
+        function multi(){ 
+            //x,y값 지
+            let x = document.querySelector('#num1').value;
+            let y = document.querySelector('#num2').value;
+            // 비어있어 오류출력
+            if(x.trim() ==="" || y.trim()===""){
+                alert("값을 입력해주세요")
+                return;
+            }
+            let int1 = x*y ;
+            //출력
+            let a_div=document.querySelector('#result');
+            a_div.innerHTML=int1;
+        }
+        function divide(){ 
+            //x,y값 지정
+            let x = document.querySelector('#num1').value;
+            let y = document.querySelector('#num2').value;
+            // 비어있어 오류출력
+            if(x.trim() ==="" || y.trim()===""){
+                alert("값을 입력해주세요")
+                return;
+            }
+      
+            //더하고 ... 더해가 안되, 
+            let int1 = x/y ;
+            //출력
+            let a_div=document.querySelector('#result');
+            a_div.innerHTML=int1;
+        }
+
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+
+    <p>
+        단:
+        <input id="dan">
+        <input type="button" value="계산" onclick="gugudan()">
+        <input type="button" value="숨기기" id="bt_show" onclick="show()">
+
+        <div id="disp">
+
+        </div>
+
+    </p>
+    <hr>
+    <!--계산기-->
+    <p>
+        <table border="1">
+            <tr>
+                <td>수 1</td>
+                <td><input type='number' id="num1"></td>
+            </tr>
+            <tr>
+                <td>수 2</td>
+                <td><input type='number' id="num2" </td>
+            </tr>
+            <tr>
+                <td colspan="2"> 
+                    <input type="button" value="+" onclick="add()">
+                    <input type="button" value="-" onclick="minus()">
+                    <input type="button" value="X" onclick="multi()">
+                    <input type="button" value="/" onclick="divide()">
+                </td>
+            </tr>
+            <tr>
+                <td>결과</td>
+                    <td><div id="result"></div>
+                    </td>
+                
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

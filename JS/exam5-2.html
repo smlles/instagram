@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{text-align: center;
+        }
+    </style>
+    <script>
+        function cal(op){
+            //let su1=document.querySelector('#su1').value // -> 이 경우 자료형 문자열
+            let su1=parseInt(document.querySelector("#su1").value); 
+            let su2=parseInt(document.querySelector("#su2").value);
+            let result = document.querySelector('#result');
+
+            if(op==='+'){
+                result.value=su1+su2;
+            }else if(op==='-'){
+                result.value=su1-su2;
+            }else if(op==='*'){
+                result.value=su1*su2;
+            }else if(op==='/'){
+                result.value=su1/su2;
+            }
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th class="su">수1</th>
+            <td> <input id="su1" placeholder="정수만 입력"></td>
+        </tr>
+        <tr>
+            <th class="su">수2</th>
+            <td> <input id="su2" placeholder="정수만 입력"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="+" onclick="cal('+')">
+                <input type="button" value="-" onclick="cal('-')">
+                <input type="button" value="*" onclick="cal('*')">
+                <input type="button" value="/" onclick="cal('/')">
+            </td>
+        </tr>
+        <tr>
+            <th>결과</th>
+            <td><input id="result" readonly></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

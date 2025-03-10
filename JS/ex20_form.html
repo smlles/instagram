@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            let f = document.forms[0];
+            //forms : 현재 html 문서의 form들을 순차적으로 배열로 정의해둔 형태
+            //body의 form태그가 여러개 존자하다면, forms 배열에 0,1,2등의 인덱스로 
+            //form 태그를 구별한다.
+            //form 태그에서 m_id라는 name 값을 가지고 있는 입력상자의 값
+            let myId=f.m_id.value;
+            if(myId==''){
+                alert('ID는 필수 입력 사항입니다.')
+                return;
+            }
+            let myPw = f.m_pw.value;
+            if(myPw==''){
+                alert('비밀번호는 필수 입력 사항입니다.')
+                return;
+            }
+            let myAge=f.m_age.value;
+            if(myAge==''){
+                alert("나이는 필수 입력 사항입니다.")
+                return;
+            }
+            //전송방식
+            f.method="GET";
+            //목적지
+            f.action="login.jsp";
+            //입력된 데이터 전송
+            f.submit();
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <table border="1">
+            <tr>
+                <th>ID : </th>
+                <td><input name="m_id" placeholder="아이디 입력"></td>
+            </tr>
+            <tr>
+                <th>AGE : </th>
+                <td><input  name="m_age"></td>
+            </tr>
+            <tr>
+                <th>PW : </th>
+                <td><input type="password" name="m_pw"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="전송" onclick="check()">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
