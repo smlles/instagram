@@ -4,6 +4,7 @@
 <!DOCTYPE html> <!--HTML 문서 선언, 대소문자 구분 X -->
 <html lang="en"> <!--HTML 최상위 태그(root태그) -->
     <head> <!--현재 HTML의 meta정보 포함-->
+        <script src="script.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--넓이 = 기기의 넓이, 기본 크기 = 100% 라는 의미-->
@@ -28,7 +29,8 @@
                 <img src="image/profile.jpg" class="circle_picture">
             </div>
             <div id="profile_info">
-                <div id="id">half_bottle
+                <div id="id"> 
+                    <span>half_bottle</span>
                     <i class="fa-solid fa-gear"></i>
                 </div>
                 
@@ -38,14 +40,14 @@
         </div> 
         <div> <!--프로필-->
             <div> 
-                <strong>
+                <strong id="userInfo">
                     반병현 (Bynghyun Ban)<br>
                 </strong>
-                작가
+                <span id="summary">작가</span>
             </div>
             <div>
-                <p>
-                    <a href="https://needleworm.github.io">needleworm.github.io</a><br>
+                <p id="profileDetail">
+                    <a href="https://needleworm.github.io">https://needleworm.github.io</a><br>
                 </p>
             </div>
         </div>
@@ -89,10 +91,10 @@
             <div class="selected">
                 <i class="fa-solid fa-mug-hot"></i>
             </div>
-            <div class="selected">
+            <div >
                 <i class="fa-solid fa-tag"></i>
             </div>
-            <div class="selected">
+            <div >
                 <i class="fa-solid fa-video"></i>
             </div>
             <div >

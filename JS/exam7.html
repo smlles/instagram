@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--<script src="name.js"></script> -->
+   <script>
+        let b_show= true;
+        function show(){
+            //숨기기 드러나기
+            document.querySelector('#new_input').style.display = block; 
+        }
+   </script>
+</head>
+<body>
+    이름 : none 
+    <button id="put" onclick="show()" >수정</button>
+
+    <div id="new_input" style="display: none;">
+        <input id="new_name" value="">
+        <button id="ok" onclick="un_show()">확인</button>
+    </div>
+</body>
+</html>
