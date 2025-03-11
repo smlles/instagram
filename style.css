@@ -116,9 +116,9 @@ h2{
 
 /* 버튼할라면 height,width,font-size,background,border,radius에 손을 대야함 */
 button{
-    height:80%;
+    height:90%;
     width: 95%;
-    font-size:3vw;
+    font-size:4vw;
     background-color: white;
     border:solid gray 1px;
     border-radius: 3px;
