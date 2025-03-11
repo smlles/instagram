@@ -5,7 +5,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 7fr 1.2fr 1.2fr 1.2fr 1.2fr;
     height:auto; 
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border-bottom: solid gray 0.1px;
 }
 #top div{
@@ -47,6 +47,7 @@ h2{
 #profile{
     display:grid;
     grid-template-columns: 1fr 3.5fr;
+    margin-bottom : 15px;
 }
 #profile_pic{
     width: 15vw;
