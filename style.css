@@ -95,13 +95,18 @@ h2{
 }
 #highlight_area{
     display:grid;
-    grid-template-columns: 12vh 12vw 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .highlight{
     text-align: center;
     margin-left:auto;
     margin-right:auto;
+    gap: 20px;
 }
+#highlight_pic{
+    gap : 20px;
+}
+
 #stat_bar{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
