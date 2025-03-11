@@ -96,7 +96,7 @@ h2{
 }
 #highlight_area{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .highlight{
     text-align: center;
@@ -124,7 +124,7 @@ h2{
 button{
     height:90%;
     width: 95%;
-    font-size:4vw;
+    font-size:4vh;
     background-color: white;
     border:solid gray 1px;
     border-radius: 3px;
