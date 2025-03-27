@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<Style>
+  body{
+    background-color: rgb(225, 242, 250);
+  }
+  h2{
+    text-align: center;
+  }
+  .date{
+    width:50px;
+  }
+  .user_number{
+    width : 90px;
+  }
+  table{
+    padding : 0px;
+    background-color: white;
+  }
+  td{
+    padding: 0px;
+  }
+  .top{
+    background-color: blue;
+    color:white;
+  }
+  table{
+    border-top:0px;
+    margin-left:33%;
+    margin-right:33%;
+  }
+  .end{
+    text-align: center;
+    }
+ .real_end{
+  background-color: blue;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+ }
+ div.table{
+  align-items: center;
+ }
+.introduce{
+  width: 90%;
+  height: 100px;
+}
+ 
+</Style>
+<body>
+  <h2>개인정보입력 폼</h2>
+  <div>
+    <div class = "table">
+      <table border>
+        <tr>
+          <th class="top">개인정보</th>
+        </tr>
+        <tr>
+          <Td>주민등록번호</Td>
+          <td><input class="user_number">-<input class="user_number"><button>검증</button></td>
+        </tr>
+        <tr>
+          <td>생일</td>
+          <td><input class="date">년<input class="date">월<input class="date">일</td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td><input type="radio" value="gender">남자<input type="radio" value="gender">여자</td>
+        </tr>
+        <tr>
+          <td>관심분야</td>
+          <td><input type="checkbox">여행<input type="checkbox">영화<input type="checkbox">독서<input type="checkbox">음악<input type="checkbox">관심없음</td>
+        </tr>
+        <tr>
+          <td>자기소개</td>
+          <td><input type="text" class="introduce"></td>
+        </tr>
+      </table>
+    </div>
+  <p class="end">
+   <a herf  "board.html"><button class="real_end" >수정완료</button></a> 
+   
+  </p>
+</div>
+</body>
+</html>
